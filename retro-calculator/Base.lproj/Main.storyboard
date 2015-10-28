@@ -230,6 +230,9 @@
                             <constraint firstItem="1Oz-hg-fQl" firstAttribute="top" secondItem="xPd-d2-haC" secondAttribute="top" constant="18" id="zQs-j3-4V3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="1Oz-hg-fQl" id="hiY-IZ-LoB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,16 +10,30 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
     
-    @IBOutlet weak var outputLbl: UILabel!
+    @IBOutlet weak var counterLabel: UILabel!
     
-    var btnSound: AVAudioPlayer!
+    var buttonSound: AVAudioPlayer!
     
-
+    
+    
+    @IBAction func numberPadPressed(btn: UIButton) {
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
+        
+        let url = NSURL(fileURLWithPath: path!)
+        
+        do {
+            try buttonSound = AVAudioPlayer(contentsOfURL: url)
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
         
     }
 
