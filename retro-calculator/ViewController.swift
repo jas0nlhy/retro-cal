@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func numberPadPressed(btn: UIButton) {
         
-        
+        buttonSound.play()
     }
     
     override func viewDidLoad() {
